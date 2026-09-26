@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Natural Product Fresh Juices - Fresh juices, milk shakes and fruit bowls."
+    >
+
+    <title>
+        Natural Product Fresh Juices
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a
+            href="#home"
+            class="logo"
+        >
+            🍹 Natural Fresh
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#location">
+                Location
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button
+            class="cart-button"
+            onclick="openCart()"
+        >
+            🛒 Cart
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    id="home"
+    class="hero"
+>
+
+    <div class="container hero-content">
+
+
+        <div class="hero-text">
+
+            <span class="hero-tag">
+                🍊 Fresh • Healthy • Natural
+            </span>
+
+
+            <h1>
+
+                Natural Product
+
+                <span>
+                    Fresh Juices
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Fresh juices, delicious milk shakes
+                and healthy fruit bowls prepared
+                with fresh ingredients.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#products"
+                    class="btn primary-btn"
+                >
+                    Explore Products
+                </a>
+
+
+                <!-- GOOGLE MAPS BUTTON -->
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Whitefield%2C%20Kondapur%2C%20Opposite%20Google%20Office%2C%20Near%20Tara%20South%20India%20Kitchen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn secondary-btn"
+                >
+                    📍 Visit Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-visual">
+
+            <div class="fruit-circle">
+
+                <span>🍎</span>
+
+                <span>🍊</span>
+
+                <span>🍉</span>
+
+                <span>🍓</span>
+
+                <span>🥝</span>
+
+                <span>🥭</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section
+    id="products"
+    class="products-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                OUR MENU
+            </span>
+
+            <h2>
+                Fresh Products
+            </h2>
+
+            <p>
+                Choose your favourite fresh drink
+                or fruit bowl.
+            </p>
+
+        </div>
+
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                onclick="filterProducts('All', this)"
+            >
+                All
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('Fresh Juices', this)"
+            >
+                🍹 Fresh Juices
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('Milk Shakes', this)"
+            >
+                🥤 Milk Shakes
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('Fruit Bowls', this)"
+            >
+                🍓 Fruit Bowls
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="productGrid"
+            class="product-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ADD PRODUCT
+===================================================== -->
+
+<section class="admin-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                MANAGE PRODUCTS
+            </span>
+
+            <h2>
+                Add New Product
+            </h2>
+
+            <p>
+                Add a new product to your menu.
+            </p>
+
+        </div>
+
+
+
+        <div class="product-form">
+
+
+            <div class="form-group">
+
+                <label>
+                    Product Name
+                </label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Example: Mango Juice"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Category
+                </label>
+
+                <select id="productCategory">
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="Fresh Juices">
+                        Fresh Juices
+                    </option>
+
+                    <option value="Milk Shakes">
+                        Milk Shakes
+                    </option>
+
+                    <option value="Fruit Bowls">
+                        Fruit Bowls
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Price
+                </label>
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="150"
+                    min="1"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full-width">
+
+                <label>
+                    Image Filename
+                </label>
+
+                <input
+                    type="text"
+                    id="productImage"
+                    placeholder="Mango juice.jpg"
+                >
+
+                <small>
+                    Example:
+                    Mango juice.jpg
+                </small>
+
+            </div>
+
+
+
+            <button
+                class="add-product-button"
+                onclick="addProduct()"
+            >
+                ➕ Add Product
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    id="about"
+    class="about-section"
+>
+
+    <div class="container about-content">
+
+
+        <div class="about-text">
+
+            <span class="section-label">
+                ABOUT US
+            </span>
+
+
+            <h2>
+                Freshness You Can Taste
+            </h2>
+
+
+            <p>
+                Natural Product Fresh Juices provides
+                fresh and delicious juices, milk shakes
+                and fruit bowls made with quality
+                ingredients.
+            </p>
+
+
+            <p>
+                Our goal is to provide refreshing,
+                healthy and tasty products for everyone.
+            </p>
+
+        </div>
+
+
+
+        <div class="about-box">
+
+            <div>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Fresh
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    46+
+                </strong>
+
+                <span>
+                    Products
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    24/7
+                </strong>
+
+                <span>
+                    Order Online
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section
+    id="location"
+    class="location-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                FIND US
+            </span>
+
+            <h2>
+                Visit Our Shop
+            </h2>
+
+            <p>
+                Come and enjoy fresh juices and fruit bowls.
+            </p>
+
+        </div>
+
+
+
+        <div class="location-card">
+
+
+            <div class="location-icon">
+                📍
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Natural Product Fresh Juices
+                </h3>
+
+
+                <p>
+                    Whitefield, Kondapur
+                </p>
+
+
+                <p>
+                    Opposite Google Office
+                </p>
+
+
+                <p>
+                    Near Tara South India Kitchen
+                </p>
+
+
+                <!-- MAP BUTTON -->
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Whitefield%2C%20Kondapur%2C%20Opposite%20Google%20Office%2C%20Near%20Tara%20South%20India%20Kitchen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="map-button"
+                >
+                    📍 Open in Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    id="contact"
+    class="contact-section"
+>
+
+    <div class="container">
+
+
+        <div class="contact-card">
+
+            <h2>
+                Order Fresh Juices
+            </h2>
+
+
+            <p>
+                Place your order directly through WhatsApp.
+            </p>
+
+
+            <a
+                href="https://wa.me/917396030537"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="whatsapp-button"
+            >
+                💬 WhatsApp Us
+            </a>
+
+
+            <p class="phone">
+                📞 7396030537
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h3>
+            🍹 Natural Product Fresh Juices
+        </h3>
+
+
+        <p>
+            Fresh • Healthy • Natural
+        </p>
+
+
+        <p>
+            © 2026 Natural Product Fresh Juices
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CART MODAL
+===================================================== -->
+
+<div
+    id="cartModal"
+    class="cart-modal"
+>
+
+    <div class="cart-box">
+
+
+        <div class="cart-header">
+
+            <h2>
+                🛒 Your Cart
+            </h2>
+
+
+            <button
+                onclick="closeCart()"
+                class="close-cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <div
+            id="cartItems"
+            class="cart-items"
+        ></div>
+
+
+
+        <div class="cart-footer">
+
+
+            <div class="cart-total-row">
+
+                <strong>
+                    Total
+                </strong>
+
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+
+            <div class="cart-actions">
+
+                <button
+                    onclick="clearCart()"
+                    class="clear-cart-btn"
+                >
+                    Clear Cart
+                </button>
+
+
+                <button
+                    onclick="orderOnWhatsApp()"
+                    class="order-button"
+                >
+                    💬 Order on WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
