@@ -3,8 +3,10 @@
 const whatsappNumber =
     "917396030537";
 
+
 const shopName =
     "Natural Product Fresh Juices";
+
 
 const shopAddress =
 `Whitefield, Kondapur
@@ -12,39 +14,25 @@ Opposite Google Office
 Near Tara South India Kitchen`;
 
 
-// =========================================================
-// IMAGE FOLDER
-// =========================================================
-
 const IMAGE_FOLDER =
     "./Project Images/";
 
 
-// =========================================================
-// GOOGLE MAPS
-// =========================================================
 
-const googleMapsURL =
-    "https://www.google.com/maps/search/?api=1&query=" +
-    "Whitefield%2C%20Kondapur%2C%20Opposite%20Google%20Office%2C%20Near%20Tara%20South%20India%20Kitchen";
+/* =====================================================
+   PRODUCTS
+===================================================== */
 
+const products = [
 
-// =========================================================
-// PRODUCTS
-// =========================================================
-
-const defaultProducts = [
-
-    // =========================
-    // FRESH JUICES
-    // =========================
+    /* ================= FRESH JUICES ================= */
 
     {
         id: 1,
         name: "ABC Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "ABC juice.jpg"
+        price: 100,
+        image: "ABC juice.jpg"
     },
 
     {
@@ -52,7 +40,7 @@ const defaultProducts = [
         name: "Apple Juice",
         category: "Fresh Juices",
         price: 120,
-        image: IMAGE_FOLDER + "Apple juice.jpg"
+        image: "Apple juice.jpg"
     },
 
     {
@@ -60,23 +48,23 @@ const defaultProducts = [
         name: "Banana Juice",
         category: "Fresh Juices",
         price: 100,
-        image: IMAGE_FOLDER + "Banana juice.jpg"
+        image: "Banana juice.jpg"
     },
 
     {
         id: 4,
         name: "Beetroot Juice",
         category: "Fresh Juices",
-        price: 110,
-        image: IMAGE_FOLDER + "Beetroot juice.jpg"
+        price: 100,
+        image: "Beetroot juice.jpg"
     },
 
     {
         id: 5,
         name: "Carrot Juice",
         category: "Fresh Juices",
-        price: 110,
-        image: IMAGE_FOLDER + "Carrot juice.jpg"
+        price: 100,
+        image: "Carrot juice.jpg"
     },
 
     {
@@ -84,23 +72,23 @@ const defaultProducts = [
         name: "Dragon Fruit Juice",
         category: "Fresh Juices",
         price: 150,
-        image: IMAGE_FOLDER + "Dragon fruit juice.jpg"
+        image: "Dragon fruit juice.jpg"
     },
 
     {
         id: 7,
         name: "Grape Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "Grape juice.jpg"
+        price: 100,
+        image: "Grape juice.jpg"
     },
 
     {
         id: 8,
         name: "Guava Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "Guava juice.jpg"
+        price: 100,
+        image: "Guava juice.jpg"
     },
 
     {
@@ -108,7 +96,7 @@ const defaultProducts = [
         name: "Kiwi Juice",
         category: "Fresh Juices",
         price: 150,
-        image: IMAGE_FOLDER + "Kiwi juice.jpg"
+        image: "Kiwi juice.jpg"
     },
 
     {
@@ -116,7 +104,7 @@ const defaultProducts = [
         name: "Leamon Juice",
         category: "Fresh Juices",
         price: 80,
-        image: IMAGE_FOLDER + "Leamon juice.jpg"
+        image: "Leamon juice.jpg"
     },
 
     {
@@ -124,7 +112,7 @@ const defaultProducts = [
         name: "Mango Juice",
         category: "Fresh Juices",
         price: 120,
-        image: IMAGE_FOLDER + "Mango juice.jpg"
+        image: "Mango juice.jpg"
     },
 
     {
@@ -132,39 +120,39 @@ const defaultProducts = [
         name: "Mixed Fruit Juice",
         category: "Fresh Juices",
         price: 150,
-        image: IMAGE_FOLDER + "Mixed fruit juice.jpg"
+        image: "Mixed fruit juice.jpg"
     },
 
     {
         id: 13,
         name: "Mosambi Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "Mosambi juice.jpg"
+        price: 100,
+        image: "Mosambi juice.jpg"
     },
 
     {
         id: 14,
         name: "Muskelon Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "Muskelon juice.jpg"
+        price: 100,
+        image: "Muskelon juice.jpg"
     },
 
     {
         id: 15,
         name: "Orange Juice",
         category: "Fresh Juices",
-        price: 120,
-        image: IMAGE_FOLDER + "Orange juice.jpg"
+        price: 100,
+        image: "Orange juice.jpg"
     },
 
     {
         id: 16,
         name: "Papaya Juice",
         category: "Fresh Juices",
-        price: 110,
-        image: IMAGE_FOLDER + "Papaya juice.jpg"
+        price: 100,
+        image: "Papaya juice.jpg"
     },
 
     {
@@ -172,7 +160,7 @@ const defaultProducts = [
         name: "Pineapple Juice",
         category: "Fresh Juices",
         price: 120,
-        image: IMAGE_FOLDER + "Pineapple juice.jpg"
+        image: "Pineapple juice.jpg"
     },
 
     {
@@ -180,7 +168,7 @@ const defaultProducts = [
         name: "Pomegranate Juice",
         category: "Fresh Juices",
         price: 150,
-        image: IMAGE_FOLDER + "Promegranate Juice.jpg"
+        image: "Promegranate Juice.jpg"
     },
 
     {
@@ -188,7 +176,7 @@ const defaultProducts = [
         name: "Strawberry Juice",
         category: "Fresh Juices",
         price: 150,
-        image: IMAGE_FOLDER + "Strawberry juice.jpg"
+        image: "Strawberry juice.jpg"
     },
 
     {
@@ -196,7 +184,7 @@ const defaultProducts = [
         name: "Sugar Cane Juice",
         category: "Fresh Juices",
         price: 100,
-        image: IMAGE_FOLDER + "Sugar cane juice.jpg"
+        image: "Sugar cane juice.jpg"
     },
 
     {
@@ -204,458 +192,329 @@ const defaultProducts = [
         name: "Watermelon Juice",
         category: "Fresh Juices",
         price: 100,
-        image: IMAGE_FOLDER + "Watermelon juice.jpg"
+        image: "Watermelon juice.jpg"
     },
 
 
-    // =========================
-    // MILK SHAKES
-    // =========================
+    /* ================= MILK SHAKES ================= */
 
     {
         id: 22,
         name: "Badham Milk",
         category: "Milk Shakes",
-        price: 140,
-        image: IMAGE_FOLDER + "Badham milk.jpg"
+        price: 100,
+        image: "Badham milk.jpg"
     },
 
     {
         id: 23,
         name: "Badham Shake",
         category: "Milk Shakes",
-        price: 150,
-        image: IMAGE_FOLDER + "Badham shake.jpg"
+        price: 130,
+        image: "Badham shake.jpg"
     },
 
     {
         id: 24,
         name: "Banana Milk Shake",
         category: "Milk Shakes",
-        price: 130,
-        image: IMAGE_FOLDER + "Banana milk shake.jpg"
+        price: 100,
+        image: "Banana milk shake.jpg"
     },
 
     {
         id: 25,
         name: "Butter Milk",
         category: "Milk Shakes",
-        price: 80,
-        image: IMAGE_FOLDER + "Butter milk.jpg"
+        price: 60,
+        image: "Butter milk.jpg"
     },
 
     {
         id: 26,
         name: "Butterscotch Milk Shake",
         category: "Milk Shakes",
-        price: 150,
-        image: IMAGE_FOLDER + "Butterscotch milk shake.jpg"
+        price: 130,
+        image: "Butterscotch milk shake.jpg"
     },
 
     {
         id: 27,
         name: "Chocolate Milk Shake",
         category: "Milk Shakes",
-        price: 150,
-        image: IMAGE_FOLDER + "Chocolate milk shake.jpg"
+        price: 130,
+        image: "Chocolate milk shake.jpg"
     },
 
     {
         id: 28,
         name: "Dry Fruit Milk Shake",
         category: "Milk Shakes",
-        price: 180,
-        image: IMAGE_FOLDER + "Dry fruit milk shake.jpg"
+        price: 160,
+        image: "Dry fruit milk shake.jpg"
     },
 
     {
         id: 29,
         name: "Kitkat Milk Shake",
         category: "Milk Shakes",
-        price: 170,
-        image: IMAGE_FOLDER + "Kitkat milk shake.jpg"
+        price: 150,
+        image: "Kitkat milk shake.jpg"
     },
 
     {
         id: 30,
         name: "Mango Milk Shake",
         category: "Milk Shakes",
-        price: 150,
-        image: IMAGE_FOLDER + "Mango milk shake.jpg"
+        price: 130,
+        image: "Mango milk shake.jpg"
     },
 
     {
         id: 31,
         name: "Oreo Milk Shake",
         category: "Milk Shakes",
-        price: 170,
-        image: IMAGE_FOLDER + "Oreo milk shake.jpg"
+        price: 150,
+        image: "Oreo milk shake.jpg"
     },
 
     {
         id: 32,
         name: "Pista Milk Shake",
         category: "Milk Shakes",
-        price: 160,
-        image: IMAGE_FOLDER + "Pista milk shake.jpg"
+        price: 140,
+        image: "Pista milk shake.jpg"
     },
 
     {
         id: 33,
         name: "Rose Milk Shake",
         category: "Milk Shakes",
-        price: 140,
-        image: IMAGE_FOLDER + "Rose milk shake.jpg"
+        price: 100,
+        image: "Rose milk shake.jpg"
     },
 
     {
         id: 34,
         name: "Strawberry Milk Shake",
         category: "Milk Shakes",
-        price: 160,
-        image: IMAGE_FOLDER + "Strawberry milk shake.jpg"
+        price: 130,
+        image: "Strawberry milk shake.jpg"
     },
 
     {
         id: 35,
         name: "Vanilla Milk Shake",
         category: "Milk Shakes",
-        price: 140,
-        image: IMAGE_FOLDER + "Vanilla milk shake.jpg"
+        price: 100,
+        image: "Vanilla milk shake.jpg"
     },
 
 
-    // =========================
-    // FRUIT BOWLS
-    // =========================
+    /* ================= FRUIT BOWLS ================= */
 
     {
         id: 36,
         name: "Apple Bowl",
         category: "Fruit Bowls",
-        price: 149,
-        image: IMAGE_FOLDER + "Apple bwol.jpg"
+        price: 120,
+        image: "Apple bwol.jpg"
     },
 
     {
         id: 37,
         name: "Banana Bowl",
         category: "Fruit Bowls",
-        price: 129,
-        image: IMAGE_FOLDER + "Banana bwol.jpg"
+        price: 100,
+        image: "Banana bwol.jpg"
     },
 
     {
         id: 38,
         name: "Dragon Fruit Bowl",
         category: "Fruit Bowls",
-        price: 179,
-        image: IMAGE_FOLDER + "Dragon fruit bwol.jpg"
+        price: 150,
+        image: "Dragon fruit bwol.jpg"
     },
 
     {
         id: 39,
         name: "Kiwi Bowl",
         category: "Fruit Bowls",
-        price: 179,
-        image: IMAGE_FOLDER + "Kiwi bwol.jpg"
+        price: 150,
+        image: "Kiwi bwol.jpg"
     },
 
     {
         id: 40,
         name: "Mango Bowl",
         category: "Fruit Bowls",
-        price: 149,
-        image: IMAGE_FOLDER + "Mango bwol.jpg"
+        price: 130,
+        image: "Mango bwol.jpg"
     },
 
     {
         id: 41,
         name: "Mixed Fruit Bowl",
         category: "Fruit Bowls",
-        price: 179,
-        image: IMAGE_FOLDER + "Mixed fruit bwol.jpg"
+        price: 150,
+        image: "Mixed fruit bwol.jpg"
     },
 
     {
         id: 42,
         name: "Papaya Bowl",
         category: "Fruit Bowls",
-        price: 129,
-        image: IMAGE_FOLDER + "Papaya bwol.jpg"
+        price: 100,
+        image: "Papaya bwol.jpg"
     },
 
     {
         id: 43,
         name: "Premium Fruit Bowl",
         category: "Fruit Bowls",
-        price: 199,
-        image: IMAGE_FOLDER + "Premium fruit bwol.jpg"
+        price: 200,
+        image: "Premium fruit bwol.jpg"
     },
 
     {
         id: 44,
         name: "Pomegranate Bowl",
         category: "Fruit Bowls",
-        price: 179,
-        image: IMAGE_FOLDER + "Promegranate bwol.jpg"
+        price: 160,
+        image: "Promegranate bwol.jpg"
     },
 
     {
         id: 45,
         name: "Strawberry Bowl",
         category: "Fruit Bowls",
-        price: 179,
-        image: IMAGE_FOLDER + "Strawberry bwol.jpg"
+        price: 160,
+        image: "Strawberry bwol.jpg"
     },
 
     {
         id: 46,
         name: "Watermelon Bowl",
         category: "Fruit Bowls",
-        price: 129,
-        image: IMAGE_FOLDER + "Watermelon bwol.jpg"
+        price: 100,
+        image: "Watermelon bwol.jpg"
     }
 
 ];
 
 
-// =========================================================
-// LOCAL STORAGE VERSION
-// =========================================================
 
-const PRODUCT_VERSION = "4";
-
-
-let products;
-
-
-const savedVersion =
-    localStorage.getItem(
-        "naturalProductsVersion"
-    );
-
-
-if (
-    savedVersion !==
-    PRODUCT_VERSION
-) {
-
-    products =
-        [...defaultProducts];
-
-
-    localStorage.setItem(
-        "naturalProducts",
-        JSON.stringify(products)
-    );
-
-
-    localStorage.setItem(
-        "naturalProductsVersion",
-        PRODUCT_VERSION
-    );
-
-} else {
-
-    products =
-        JSON.parse(
-            localStorage.getItem(
-                "naturalProducts"
-            )
-        ) ||
-        [...defaultProducts];
-
-}
-
-
-// =========================================================
-// CART
-// =========================================================
+/* =====================================================
+   CART
+===================================================== */
 
 let cart =
     JSON.parse(
         localStorage.getItem(
-            "naturalCart"
+            "naturalFreshJuiceCart"
         )
     ) || [];
 
 
-// =========================================================
-// PAGE LOAD
-// =========================================================
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
+/* =====================================================
+   DISPLAY PRODUCTS
+===================================================== */
 
-        displayProducts("All");
+function displayProducts(category = "All") {
 
-        updateCartCount();
-
-    }
-);
-
-
-// =========================================================
-// DISPLAY PRODUCTS
-// =========================================================
-
-function displayProducts(category) {
-
-    const grid =
+    const productGrid =
         document.getElementById(
             "productGrid"
         );
 
 
-    if (!grid) {
-        return;
-    }
-
-
-    grid.innerHTML = "";
-
-
-    let filteredProducts;
-
-
-    if (category === "All") {
-
-        filteredProducts =
-            products;
-
-    } else {
-
-        filteredProducts =
-            products.filter(
+    const filteredProducts =
+        category === "All"
+            ? products
+            : products.filter(
                 product =>
-                    product.category ===
-                    category
+                    product.category === category
             );
 
-    }
+
+    productGrid.innerHTML = "";
 
 
-    if (
-        filteredProducts.length === 0
-    ) {
+    filteredProducts.forEach(product => {
 
-        grid.innerHTML = `
+        const imagePath =
+            IMAGE_FOLDER +
+            encodeURIComponent(
+                product.image
+            );
 
-            <div class="no-products">
+
+        const card =
+            document.createElement("div");
+
+
+        card.className =
+            "product-card";
+
+
+        card.innerHTML = `
+
+            <img
+                src="${imagePath}"
+                alt="${product.name}"
+                class="product-image"
+                onerror="handleImageError(this)"
+            >
+
+
+            <div class="product-content">
+
+                <div class="product-category">
+                    ${product.category}
+                </div>
+
 
                 <h3>
-                    No products available
+                    ${product.name}
                 </h3>
 
-                <p>
-                    Please select another category.
-                </p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">
+                        ₹${product.price}
+                    </span>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(${product.id})"
+                    >
+                        + Add
+                    </button>
+
+                </div>
 
             </div>
 
         `;
 
-        return;
-    }
 
+        productGrid.appendChild(card);
 
-    filteredProducts.forEach(
-        product => {
-
-            const card =
-                document.createElement(
-                    "article"
-                );
-
-
-            card.className =
-                "product-card";
-
-
-            card.innerHTML = `
-
-                <div
-                    class="product-image-container"
-                >
-
-                    <img
-                        src="${product.image}"
-                        alt="${product.name}"
-                        class="product-image"
-                        onerror="handleImageError(this)"
-                    >
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <span
-                        class="product-category"
-                    >
-                        ${product.category}
-                    </span>
-
-
-                    <h3>
-                        ${product.name}
-                    </h3>
-
-
-                    <div
-                        class="product-bottom"
-                    >
-
-                        <span
-                            class="product-price"
-                        >
-                            ₹${product.price}
-                        </span>
-
-
-                        <button
-                            class="add-cart-btn"
-                            onclick="addToCart(${product.id})"
-                        >
-                            Add
-                        </button>
-
-                    </div>
-
-
-                    <button
-                        class="delete-product-btn"
-                        onclick="deleteProduct(${product.id})"
-                    >
-                        Delete Product
-                    </button>
-
-                </div>
-
-            `;
-
-
-            grid.appendChild(card);
-
-        }
-    );
+    });
 
 }
 
 
-// =========================================================
-// IMAGE ERROR
-// =========================================================
+
+/* =====================================================
+   IMAGE ERROR
+===================================================== */
 
 function handleImageError(image) {
-
-    console.error(
-        "Image not found:",
-        image.src
-    );
-
 
     image.onerror = null;
 
@@ -673,17 +532,17 @@ function handleImageError(image) {
                 <rect
                     width="100%"
                     height="100%"
-                    fill="#eeeeee"
+                    fill="#edf7ef"
                 />
 
                 <text
                     x="50%"
-                    y="48%"
+                    y="50%"
+                    dominant-baseline="middle"
                     text-anchor="middle"
-                    font-size="28"
-                    fill="#777"
+                    font-size="70"
                 >
-                    Image Not Found
+                    🍹
                 </text>
 
             </svg>
@@ -693,229 +552,52 @@ function handleImageError(image) {
 }
 
 
-// =========================================================
-// FILTER
-// =========================================================
+
+/* =====================================================
+   FILTER PRODUCTS
+===================================================== */
 
 function filterProducts(
     category,
     button
 ) {
 
+    document
+        .querySelectorAll(
+            ".category-btn"
+        )
+        .forEach(btn => {
+
+            btn.classList.remove(
+                "active"
+            );
+
+        });
+
+
+    button.classList.add(
+        "active"
+    );
+
+
     displayProducts(
         category
     );
 
-
-    document
-        .querySelectorAll(
-            ".filter-btn"
-        )
-        .forEach(
-            btn => {
-
-                btn.classList.remove(
-                    "active"
-                );
-
-            }
-        );
-
-
-    if (button) {
-
-        button.classList.add(
-            "active"
-        );
-
-    }
-
 }
 
 
-// =========================================================
-// ADD PRODUCT
-// =========================================================
 
-function addProduct() {
+/* =====================================================
+   ADD TO CART
+===================================================== */
 
-    const name =
-        document
-            .getElementById(
-                "productName"
-            )
-            .value
-            .trim();
-
-
-    const category =
-        document
-            .getElementById(
-                "productCategory"
-            )
-            .value;
-
-
-    const price =
-        Number(
-            document
-                .getElementById(
-                    "productPrice"
-                )
-                .value
-        );
-
-
-    let image =
-        document
-            .getElementById(
-                "productImage"
-            )
-            .value
-            .trim();
-
-
-    if (!name) {
-
-        showToast(
-            "Enter product name"
-        );
-
-        return;
-    }
-
-
-    if (!category) {
-
-        showToast(
-            "Select category"
-        );
-
-        return;
-    }
-
-
-    if (
-        !price ||
-        price <= 0
-    ) {
-
-        showToast(
-            "Enter valid price"
-        );
-
-        return;
-    }
-
-
-    if (!image) {
-
-        showToast(
-            "Enter image filename"
-        );
-
-        return;
-    }
-
-
-    if (
-        !image.startsWith(
-            "http://"
-        ) &&
-        !image.startsWith(
-            "https://"
-        ) &&
-        !image.startsWith(
-            "./"
-        )
-    ) {
-
-        image =
-            IMAGE_FOLDER +
-            image;
-
-    }
-
-
-    const newProduct = {
-
-        id:
-            Date.now(),
-
-        name:
-            name,
-
-        category:
-            category,
-
-        price:
-            price,
-
-        image:
-            image
-
-    };
-
-
-    products.push(
-        newProduct
-    );
-
-
-    saveProducts();
-
-
-    displayProducts(
-        "All"
-    );
-
-
-    document.getElementById(
-        "productName"
-    ).value = "";
-
-
-    document.getElementById(
-        "productPrice"
-    ).value = "";
-
-
-    document.getElementById(
-        "productImage"
-    ).value = "";
-
-
-    showToast(
-        "Product added successfully!"
-    );
-
-}
-
-
-// =========================================================
-// SAVE PRODUCTS
-// =========================================================
-
-function saveProducts() {
-
-    localStorage.setItem(
-        "naturalProducts",
-        JSON.stringify(products)
-    );
-
-}
-
-
-// =========================================================
-// DELETE PRODUCT
-// =========================================================
-
-function deleteProduct(id) {
+function addToCart(productId) {
 
     const product =
         products.find(
             item =>
-                item.id === id
+                item.id === productId
         );
 
 
@@ -924,98 +606,32 @@ function deleteProduct(id) {
     }
 
 
-    if (
-        !confirm(
-            `Delete ${product.name}?`
-        )
-    ) {
-
-        return;
-    }
-
-
-    products =
-        products.filter(
-            item =>
-                item.id !== id
-        );
-
-
-    cart =
-        cart.filter(
-            item =>
-                item.id !== id
-        );
-
-
-    saveProducts();
-
-    saveCart();
-
-    displayProducts("All");
-
-    updateCartCount();
-
-
-    showToast(
-        "Product deleted"
-    );
-
-}
-
-
-// =========================================================
-// CART
-// =========================================================
-
-function addToCart(id) {
-
-    const product =
-        products.find(
-            item =>
-                item.id === id
-        );
-
-
-    if (!product) {
-
-        showToast(
-            "Product not found"
-        );
-
-        return;
-    }
-
-
-    const existing =
+    const existingItem =
         cart.find(
             item =>
-                item.id === id
+                item.id === productId
         );
 
 
-    if (existing) {
+    if (existingItem) {
 
-        existing.quantity++;
+        existingItem.quantity += 1;
 
     } else {
 
         cart.push({
 
-            id:
-                product.id,
+            id: product.id,
 
-            name:
-                product.name,
+            name: product.name,
 
-            price:
-                product.price,
+            category: product.category,
 
-            image:
-                product.image,
+            price: product.price,
 
-            quantity:
-                1
+            image: product.image,
+
+            quantity: 1
 
         });
 
@@ -1034,77 +650,72 @@ function addToCart(id) {
 }
 
 
-// =========================================================
-// SAVE CART
-// =========================================================
+
+/* =====================================================
+   SAVE CART
+===================================================== */
 
 function saveCart() {
 
     localStorage.setItem(
-        "naturalCart",
+        "naturalFreshJuiceCart",
         JSON.stringify(cart)
     );
 
 }
 
 
-// =========================================================
-// CART COUNT
-// =========================================================
+
+/* =====================================================
+   CART COUNT
+===================================================== */
 
 function updateCartCount() {
 
     const count =
-        document.getElementById(
-            "cartCount"
-        );
-
-
-    if (!count) {
-        return;
-    }
-
-
-    const total =
         cart.reduce(
-            (
-                sum,
-                item
-            ) =>
-                sum + item.quantity,
+            (total, item) =>
+                total + item.quantity,
             0
         );
 
 
-    count.textContent =
-        total;
+    document.getElementById(
+        "cartCount"
+    ).textContent = count;
 
 }
 
 
-// =========================================================
-// OPEN CART
-// =========================================================
+
+/* =====================================================
+   OPEN CART
+===================================================== */
 
 function openCart() {
-
-    renderCart();
-
 
     document
         .getElementById(
             "cartModal"
         )
         .classList.add(
-            "show"
+            "active"
         );
+
+
+    renderCart();
+
+
+    document.body.style.overflow =
+        "hidden";
 
 }
 
 
-// =========================================================
-// CLOSE CART
-// =========================================================
+
+/* =====================================================
+   CLOSE CART
+===================================================== */
 
 function closeCart() {
 
@@ -1113,15 +724,20 @@ function closeCart() {
             "cartModal"
         )
         .classList.remove(
-            "show"
+            "active"
         );
+
+
+    document.body.style.overflow =
+        "";
 
 }
 
 
-// =========================================================
-// RENDER CART
-// =========================================================
+
+/* =====================================================
+   RENDER CART
+===================================================== */
 
 function renderCart() {
 
@@ -1137,20 +753,26 @@ function renderCart() {
         );
 
 
-    cartItems.innerHTML = "";
-
-
-    if (
-        cart.length === 0
-    ) {
+    if (cart.length === 0) {
 
         cartItems.innerHTML = `
 
             <div class="empty-cart">
 
+                <div
+                    style="
+                        font-size:55px;
+                        margin-bottom:15px;
+                    "
+                >
+                    🛒
+                </div>
+
+
                 <h3>
                     Your cart is empty
                 </h3>
+
 
                 <p>
                     Add some fresh products.
@@ -1164,109 +786,109 @@ function renderCart() {
         cartTotal.textContent =
             "₹0";
 
+
         return;
+
     }
+
+
+    cartItems.innerHTML = "";
 
 
     let total = 0;
 
 
-    cart.forEach(
-        item => {
+    cart.forEach(item => {
 
-            const itemTotal =
-                item.price *
-                item.quantity;
-
-
-            total +=
-                itemTotal;
+        const itemTotal =
+            item.price *
+            item.quantity;
 
 
-            const div =
-                document.createElement(
-                    "div"
-                );
+        total += itemTotal;
 
 
-            div.className =
-                "cart-item";
+        const imagePath =
+            IMAGE_FOLDER +
+            encodeURIComponent(
+                item.image
+            );
 
 
-            div.innerHTML = `
-
-                <img
-                    src="${item.image}"
-                    alt="${item.name}"
-                    onerror="handleImageError(this)"
-                >
+        const cartItem =
+            document.createElement(
+                "div"
+            );
 
 
-                <div class="cart-item-info">
-
-                    <h4>
-                        ${item.name}
-                    </h4>
+        cartItem.className =
+            "cart-item";
 
 
-                    <p>
-                        ₹${item.price}
-                    </p>
+        cartItem.innerHTML = `
+
+            <img
+                src="${imagePath}"
+                alt="${item.name}"
+                class="cart-item-image"
+                onerror="handleImageError(this)"
+            >
 
 
-                    <div
-                        class="quantity-controls"
-                    >
+            <div class="cart-item-info">
 
-                        <button
-                            onclick="changeQuantity(${item.id}, -1)"
-                        >
-                            −
-                        </button>
+                <h4>
+                    ${item.name}
+                </h4>
 
 
-                        <span>
-                            ${item.quantity}
-                        </span>
-
-
-                        <button
-                            onclick="changeQuantity(${item.id}, 1)"
-                        >
-                            +
-                        </button>
-
-                    </div>
-
+                <div class="cart-item-price">
+                    ₹${item.price}
                 </div>
 
 
-                <div
-                    class="cart-item-right"
-                >
+                <div class="quantity-controls">
 
-                    <strong>
-                        ₹${itemTotal}
-                    </strong>
+                    <button
+                        onclick="
+                            changeQuantity(
+                                ${item.id},
+                                -1
+                            )
+                        "
+                    >
+                        −
+                    </button>
+
+
+                    <span>
+                        ${item.quantity}
+                    </span>
 
 
                     <button
-                        onclick="removeFromCart(${item.id})"
+                        onclick="
+                            changeQuantity(
+                                ${item.id},
+                                1
+                            )
+                        "
                     >
-                        Remove
+                        +
                     </button>
 
                 </div>
 
-            `;
+            </div>
+
+        `;
 
 
-            cartItems.appendChild(
-                div
-            );
+        cartItems.appendChild(
+            cartItem
+        );
 
-        }
-    );
+    });
 
 
     cartTotal.textContent =
@@ -1275,19 +897,20 @@ function renderCart() {
 }
 
 
-// =========================================================
-// QUANTITY
-// =========================================================
+
+/* =====================================================
+   CHANGE QUANTITY
+===================================================== */
 
 function changeQuantity(
-    id,
+    productId,
     change
 ) {
 
     const item =
         cart.find(
             product =>
-                product.id === id
+                product.id === productId
         );
 
 
@@ -1296,18 +919,15 @@ function changeQuantity(
     }
 
 
-    item.quantity +=
-        change;
+    item.quantity += change;
 
 
-    if (
-        item.quantity <= 0
-    ) {
+    if (item.quantity <= 0) {
 
         cart =
             cart.filter(
                 product =>
-                    product.id !== id
+                    product.id !== productId
             );
 
     }
@@ -1322,156 +942,115 @@ function changeQuantity(
 }
 
 
-// =========================================================
-// REMOVE CART ITEM
-// =========================================================
 
-function removeFromCart(id) {
-
-    cart =
-        cart.filter(
-            item =>
-                item.id !== id
-        );
-
-
-    saveCart();
-
-    updateCartCount();
-
-    renderCart();
-
-
-    showToast(
-        "Removed from cart"
-    );
-
-}
-
-
-// =========================================================
-// CLEAR CART
-// =========================================================
-
-function clearCart() {
-
-    if (
-        cart.length === 0
-    ) {
-
-        showToast(
-            "Cart is empty"
-        );
-
-        return;
-    }
-
-
-    if (
-        !confirm(
-            "Clear all cart items?"
-        )
-    ) {
-
-        return;
-    }
-
-
-    cart = [];
-
-
-    saveCart();
-
-    updateCartCount();
-
-    renderCart();
-
-
-    showToast(
-        "Cart cleared"
-    );
-
-}
-
-
-// =========================================================
-// WHATSAPP
-// =========================================================
+/* =====================================================
+   ORDER ON WHATSAPP
+===================================================== */
 
 function orderOnWhatsApp() {
 
-    if (
-        cart.length === 0
-    ) {
+    if (cart.length === 0) {
 
         showToast(
-            "Add products to cart first"
+            "Your cart is empty"
         );
 
         return;
+
     }
-
-
-    let message =
-        `Hello ${shopName}!\n\n`;
-
-
-    message +=
-        "I would like to order:\n\n";
 
 
     let total = 0;
 
 
+    let orderText =
+`Hello ${shopName}!
+
+I would like to order:
+
+`;
+
+
     cart.forEach(
-        item => {
+        (item, index) => {
 
             const itemTotal =
                 item.price *
                 item.quantity;
 
 
-            total +=
-                itemTotal;
+            total += itemTotal;
 
 
-            message +=
-                `${item.name} x ${item.quantity} = ₹${itemTotal}\n`;
+            orderText +=
+`${index + 1}. ${item.name}
+Quantity: ${item.quantity}
+Price: ₹${item.price}
+Subtotal: ₹${itemTotal}
+
+`;
 
         }
     );
 
 
-    message +=
-        `\nTotal Amount: ₹${total}\n\n`;
+    orderText +=
+`Total: ₹${total}
+
+Shop Address:
+${shopAddress}
+
+Please confirm my order.`;
 
 
-    message +=
-        "Please confirm my order.\n\n";
-
-
-    message +=
-        `Shop Address:\n${shopAddress}`;
-
-
-    const url =
+    const whatsappURL =
         `https://wa.me/${whatsappNumber}?text=` +
         encodeURIComponent(
-            message
+            orderText
         );
 
 
+    /* =====================================
+       OPEN WHATSAPP
+    ===================================== */
+
     window.open(
-        url,
+        whatsappURL,
         "_blank"
+    );
+
+
+    /* =====================================
+       CLEAR CART AUTOMATICALLY
+    ===================================== */
+
+    cart = [];
+
+
+    localStorage.removeItem(
+        "naturalFreshJuiceCart"
+    );
+
+
+    updateCartCount();
+
+    renderCart();
+
+
+    closeCart();
+
+
+    showToast(
+        "Order sent! Cart cleared successfully."
     );
 
 }
 
 
-// =========================================================
-// TOAST
-// =========================================================
+
+/* =====================================================
+   TOAST
+===================================================== */
 
 function showToast(message) {
 
@@ -1490,59 +1069,43 @@ function showToast(message) {
     );
 
 
-    clearTimeout(
-        window.toastTimer
+    setTimeout(
+        () => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        },
+        2500
     );
-
-
-    window.toastTimer =
-        setTimeout(
-            () => {
-
-                toast.classList.remove(
-                    "show"
-                );
-
-            },
-            2500
-        );
 
 }
 
 
-// =========================================================
-// CLOSE CART OUTSIDE
-// =========================================================
 
-window.addEventListener(
-    "click",
-    function (event) {
+/* =====================================================
+   CART OVERLAY
+===================================================== */
 
-        const modal =
-            document.getElementById(
-                "cartModal"
-            );
-
-
-        if (
-            event.target === modal
-        ) {
-
-            closeCart();
-
-        }
-
-    }
-);
+document
+    .querySelector(
+        ".cart-overlay"
+    )
+    .addEventListener(
+        "click",
+        closeCart
+    );
 
 
-// =========================================================
-// ESC KEY
-// =========================================================
+
+/* =====================================================
+   ESC KEY
+===================================================== */
 
 document.addEventListener(
     "keydown",
-    function (event) {
+    event => {
 
         if (
             event.key === "Escape"
@@ -1554,3 +1117,16 @@ document.addEventListener(
 
     }
 );
+
+
+
+/* =====================================================
+   INITIAL LOAD
+===================================================== */
+
+displayProducts(
+    "All"
+);
+
+
+updateCartCount();
